@@ -1,0 +1,59 @@
+.edu-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.edu-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.edu-top-bar {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(to right, var(--accent), transparent);
+}
+
+.edu-degree {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0.4rem;
+}
+
+.edu-meta {
+  font-size: 0.72rem;
+  color: var(--text-mid);
+  font-style: italic;
+  margin-bottom: 1.3rem;
+}
+
+.edu-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.edu-badge {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.65rem;
+  color: var(--text-mid);
+}
+
+.edu-badge.highlight {
+  border-color: rgba(59,130,246,0.4);
+  color: var(--accent2);
+  background: var(--accent-glow);
+}
