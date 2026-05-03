@@ -134,7 +134,7 @@ CV_DATA = CVData(
             credits="257 credits completed",
             highlights=[
                 "Specialisations: Software Engineering, Ethical Hacking, Cyber Security, IoT Systems, Data Analytics & AI",
-                "Thesis: A Security Maturity Model for MERN Stack Applications in Bangladeshi SMEs — Grade 3/5",
+                "Thesis: A Security Maturity Model for MERN Stack Applications in Bangladeshi SMEs",
                 "WIMMA Lab 287-hour professional internship programme",
                 "Hackathon Finalist 2022 · JAMK InnoFlash innovation programme",
             ],

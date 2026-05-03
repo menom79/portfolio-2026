@@ -15,7 +15,7 @@ export default function Education({ data }) {
         <p className="edu-degree">{edu.degree}</p>
         <p className="edu-meta">{edu.school} · {edu.location} · {edu.period}</p>
         <div className="edu-badges">
-          <span className="edu-badge highlight">{edu.gpa} GPA</span>
+          {/* <span className="edu-badge highlight">{edu.gpa} GPA</span> */}
           <span className="edu-badge highlight">{edu.credits}</span>
           {edu.highlights.map((h, i) => (
             <span key={i} className="edu-badge">{h}</span>

@@ -1,3 +1,4 @@
+/* ── Contact grid ── */
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -43,46 +44,131 @@
   color: var(--text);
 }
 
-.doc-sub {
-  font-size: 0.65rem;
-  color: var(--text-dim);
-  margin-top: 0.3rem;
+/* ── Documents grid ── */
+.doc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
 }
 
 .doc-card {
+  position: relative;
   display: flex;
-  gap: 1rem;
-  align-items: flex-start;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 1.6rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  overflow: hidden;
+  text-decoration: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s, border-color 0.3s, background 0.3s, box-shadow 0.3s;
+  cursor: pointer;
 }
 
-.pdf-thumbnail-wrapper {
+.doc-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.doc-card:hover {
+  border-color: rgba(59, 130, 246, 0.5);
+  background: rgba(59, 130, 246, 0.08);
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.15), inset 0 0 30px rgba(59, 130, 246, 0.03);
+  transform: translateY(-4px) !important;
+}
+
+/* Animated glow blob behind each card */
+.doc-glow {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.18) 0%, transparent 70%);
+  pointer-events: none;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+.doc-card:hover .doc-glow {
+  opacity: 1;
+}
+
+/* Icon badge */
+.doc-icon {
+  font-size: 1.8rem;
   flex-shrink: 0;
-}
-
-.doc-info {
-  flex: 1;
+  width: 52px;
+  height: 52px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  border-radius: 12px;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  transition: background 0.3s, border-color 0.3s;
 }
 
-@media (max-width: 640px) {
-  .doc-card {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .pdf-thumbnail-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .doc-info {
-    text-align: center;
-  }
+.doc-card:hover .doc-icon {
+  background: rgba(59, 130, 246, 0.2);
+  border-color: rgba(59, 130, 246, 0.4);
+}
+
+/* Text */
+.doc-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.doc-label {
+  font-size: 0.6rem;
+  color: var(--accent);
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+.doc-title {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 0.3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.doc-sub {
+  font-size: 0.65rem;
+  color: var(--text-dim);
+  transition: color 0.2s;
 }
 
 .doc-card:hover .doc-sub {
   color: var(--text-mid);
+}
+
+/* Arrow */
+.doc-arrow {
+  font-size: 1rem;
+  color: var(--text-dim);
+  flex-shrink: 0;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.doc-card:hover .doc-arrow {
+  color: var(--accent2);
+  transform: translate(2px, -2px);
+}
+
+@media (max-width: 560px) {
+  .doc-grid { grid-template-columns: 1fr; }
+  .doc-title { white-space: normal; }
 }
