@@ -23,7 +23,7 @@ function DocCard({ title, subtitle, file, delay, icon }) {
   return (
     <a
       ref={ref}
-      href={'/' + file}
+      href={'/portfolio-2026/' + file}
       target="_blank"
       rel="noreferrer"
       className={'doc-card ' + (visible ? 'visible' : '')}
