@@ -2,6 +2,7 @@
   "name": "menom-portfolio",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://menom79.github.io/portfolio-2026",
   "dependencies": {
     "pdfjs-dist": "^5.7.284",
     "react": "^18.2.0",
@@ -15,6 +16,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "vite build",
+    "deploy": "gh-pages -d dist"
   }
 }
