@@ -4,7 +4,7 @@ import './Contact.css'
 function ContactCard({ type, value, href, delay }) {
   const { ref, visible } = useScrollReveal()
   return (
-    
+    <a
       ref={ref}
       href={href}
       target={href.startsWith('http') ? '_blank' : undefined}
@@ -21,7 +21,7 @@ function ContactCard({ type, value, href, delay }) {
 function DocCard({ title, subtitle, file, delay, icon }) {
   const { ref, visible } = useScrollReveal()
   return (
-    
+    <a
       ref={ref}
       href={'/' + file}
       target="_blank"
