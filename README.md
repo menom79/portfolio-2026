@@ -1,4 +1,4 @@
-# Menom Haque — Portfolio
+# Menom Haque - Portfolio
 
 A full-stack portfolio website showcasing professional experience, skills, education, and contact information.
 

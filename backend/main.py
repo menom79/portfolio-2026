@@ -65,7 +65,7 @@ CV_DATA = CVData(
         "experience building RESTful APIs on AWS, test automation with Robot Framework/Selenium, "
         "and front-end development with Angular. Proven track record of delivering API "
         "infrastructure, improving software quality, and working in agile, English-speaking teams. "
-        "Open to backend, full stack, QA/automation, or cloud roles — in Finland or remotely."
+        "Open to backend, full stack, QA/automation, or cloud roles - in Finland or remotely."
     ),
     contact=ContactInfo(
         email="mhmenom@gmail.com",
@@ -80,11 +80,11 @@ CV_DATA = CVData(
             title="Back End Developer",
             company="MyHomesID Oy",
             location="Jyväskylä, Finland",
-            period="Dec 2024 – Jun 2025",
+            period="Dec 2024 - Jun 2025",
             bullets=[
                 "Designed and built the company's entire API infrastructure from scratch on AWS, "
                 "including RESTful API design, implementation, documentation, and deployment via API Gateway.",
-                "Established AWS API Gateway for secure internal and external API consumption — "
+                "Established AWS API Gateway for secure internal and external API consumption - "
                 "the first such infrastructure at the company.",
                 "Onboarded and trained internal staff on the API project, tooling, and best practices.",
                 "Collaborated with cross-functional teams in an English-language, international environment.",
@@ -126,7 +126,7 @@ CV_DATA = CVData(
     ],
     education=[
         Education(
-            degree="Bachelor of Engineering — Information & Communications Technology",
+            degree="Bachelor of Engineering - Information & Communications Technology",
             school="JAMK University of Applied Sciences",
             location="Jyväskylä, Finland",
             period="2021 – Dec 2025",
@@ -141,9 +141,9 @@ CV_DATA = CVData(
         )
     ],
     achievements=[
-        Achievement(text="WIMMA Lab 287-hour Professional Internship Certificate — JAMK Institute of IT (2023)"),
-        Achievement(text="Hackathon Finalist — Road to Hackathon, JAMK (2022)"),
-        Achievement(text="Occupational Safety Card — gained through academic and professional environments"),
+        Achievement(text="WIMMA Lab 287-hour Professional Internship Certificate - JAMK Institute of IT (2023)"),
+        Achievement(text="Hackathon Finalist - Road to Hackathon, JAMK (2022)"),
+        Achievement(text="Occupational Safety Card - gained through academic and professional environments"),
     ],
 )
 

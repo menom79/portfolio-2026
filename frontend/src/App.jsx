@@ -7,6 +7,7 @@ import Skills from './components/Skills'
 import Education from './components/Education'
 import Contact from './components/Contact'
 import './components/Section.css'
+import CVButton from './components/CVButton'
 
 function Divider() {
   return <div className="divider" />
@@ -75,6 +76,7 @@ export default function App() {
       }}>
         Menom Haque · Jyväskylä, Finland · Open to work globally
       </footer>
+      <CVButton />
     </>
   )
 }
