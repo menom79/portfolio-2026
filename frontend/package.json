@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://menom79.github.io/portfolio-2026",
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "pdfjs-dist": "^5.7.284",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

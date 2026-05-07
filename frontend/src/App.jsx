@@ -8,6 +8,7 @@ import Education from './components/Education'
 import Contact from './components/Contact'
 import './components/Section.css'
 import CVButton from './components/CVButton'
+import ContactForm from './components/ContactForm'
 
 function Divider() {
   return <div className="divider" />
@@ -68,6 +69,7 @@ export default function App() {
       <Education data={data.education} />
       <Divider />
       <Contact data={data.contact} />
+      <ContactForm />
 
       <footer style={{
         textAlign: 'center', padding: '3rem 2rem',
